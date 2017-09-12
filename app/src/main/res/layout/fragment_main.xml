@@ -1,26 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.github.ricardosbarbosa.scorekeeper.MainActivityFragment"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    tools:context="com.github.ricardosbarbosa.scorekeeper.MainActivityFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-        <TextView android:id="@+id/textViewLeft" style="@style/Score" tools:text="1000"/>
-        <TextView android:id="@+id/textViewRight" style="@style/Score"  tools:text="1000"/>
-    </LinearLayout>
+        android:orientation="vertical">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_left"
-        app:srcCompat="@android:drawable/ic_input_add"
-        style="@style/ScoreButton.Left" />
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_right"
-        app:srcCompat="@android:drawable/ic_input_add"
-        style="@style/ScoreButton.Right" />
-</RelativeLayout>
+        <TextView
+            android:text="@string/gols"
+            style="@style/Score.Text.Principal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLeftGols"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+
+            <TextView
+                android:id="@+id/textViewLeftGols"
+                style="@style/Score.Principal"
+                tools:text="1000"/>
+
+            <TextView
+                android:id="@+id/textViewRightGols"
+                style="@style/Score.Principal"
+                tools:text="1000"/>
+
+            <Button
+                android:id="@+id/buttonRightGols"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/faltas"
+            style="@style/Score.Text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLeftFaltas"
+                android:text="@string/button_add_text"
+                style="@style/Score.Button" />
+
+            <TextView
+                android:id="@+id/textViewLeftFaltas"
+                style="@style/Score"
+                tools:text="1000"/>
+
+            <TextView
+                android:id="@+id/textViewRightFaltas"
+                style="@style/Score"
+                tools:text="1000"/>
+
+            <Button
+                android:id="@+id/buttonRightFaltas"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/cart_es_amarelos"
+            style="@style/Score.Text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLeftCartoesAmarelos"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+
+            <TextView
+                android:id="@+id/textViewLeftCartoesAmarelos"
+                style="@style/Score"
+                tools:text="1000"/>
+
+            <TextView
+                android:id="@+id/textViewRightCartoesAmarelos"
+                style="@style/Score"
+                tools:text="1000"/>
+
+            <Button
+                android:id="@+id/buttonRightCartoesAmarelos"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/cartoes_vermelhos"
+            style="@style/Score.Text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLeftCartoesVermelhos"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+
+            <TextView
+                android:id="@+id/textViewLeftCartoesVermelhos"
+                style="@style/Score"
+                tools:text="1000"/>
+
+            <TextView
+                android:id="@+id/textViewRightCartoesVermelhos"
+                style="@style/Score"
+                tools:text="1000"/>
+
+            <Button
+                android:id="@+id/buttonRightCartoesVermelhos"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+            
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/escanteios"
+            style="@style/Score.Text" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <Button
+                android:id="@+id/buttonLeftEscanteios"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+            
+            <TextView
+                android:id="@+id/textViewLeftEscanteios"
+                style="@style/Score"
+                tools:text="1000"/>
+            
+            <TextView
+                android:id="@+id/textViewRightEscanteios"
+                style="@style/Score"
+                tools:text="1000"/>
+            
+            <Button
+                android:id="@+id/buttonRightEscanteios"
+                style="@style/Score.Button"
+                android:text="@string/button_add_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

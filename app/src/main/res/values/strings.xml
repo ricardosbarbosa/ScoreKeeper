@@ -1,6 +1,23 @@
 <resources>
-    <string name="app_name">Score Keeper</string>
+    <string name="app_name">Score Keeper - Futebol</string>
     <string name="action_reset">Reset</string>
     <string name="score_left_key">scoreLeft</string>
     <string name="score_left_right">scoreRight</string>
+
+    <string name="golsLeft">golsLeft</string>
+    <string name="amarelosLeft">amarelosLeft</string>
+    <string name="vermelhosLeft">vermelhosLeft</string>
+    <string name="faltasLeft">faltasLeft</string>
+    <string name="escanteiosLeft">escanteiosLeft</string>
+    <string name="golsRight">golsRight</string>
+    <string name="amarelosRight">amarelosRight</string>
+    <string name="vermelhosRight">vermelhosRight</string>
+    <string name="faltasRight">faltasRight</string>
+    <string name="escanteiosRight">escanteiosRight</string>
+    <string name="escanteios">Escanteios</string>
+    <string name="gols">Gols</string>
+    <string name="faltas">Faltas</string>
+    <string name="cart_es_amarelos">Cartões Amarelos</string>
+    <string name="cartoes_vermelhos">Cartões Vermelhos</string>
+    <string name="button_add_text">+</string>
 </resources>
